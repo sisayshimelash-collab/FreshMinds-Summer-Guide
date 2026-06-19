@@ -508,6 +508,12 @@
       padding-bottom: 16px;
       border-bottom: 1px solid var(--card-border);
     }
+    .cat-block {
+      margin-bottom: 56px;
+    }
+    .cat-block:last-child {
+      margin-bottom: 0;
+    }
     .cat-emoji { font-size: 2rem; }
     .cat-title-row h3 {
       font-family: 'Space Grotesk', sans-serif;
@@ -693,7 +699,7 @@
     </h1>
     <p class="hero-sub">
       FreshMinds Academy's hand-picked YouTube syllabus for first-year university students.
-      22 channels. 7 skill areas. One focused summer that changes everything.
+      17 channels. 6 skill areas. One focused summer that changes everything.
     </p>
     <div class="hero-cta">
       <a href="#syllabus" class="btn btn-primary">
@@ -724,12 +730,12 @@
       </div>
       <div class="stat-card">
         <div class="stat-icon">📺</div>
-        <div class="stat-num">17</div>
+        <div class="stat-num">22</div>
         <div class="stat-label">Curated Channels</div>
       </div>
       <div class="stat-card">
         <div class="stat-icon">🗂️</div>
-        <div class="stat-num">6</div>
+        <div class="stat-num">7</div>
         <div class="stat-label">Skill Categories</div>
       </div>
     </div>
@@ -831,7 +837,7 @@
   <div class="container">
     <div class="section-header">
       <div class="section-label">Summer 2026 | 2018 E.C Syllabus</div>
-      <h2 class="section-title">17 Channels.<br/>6 Categories. One Summer.</h2>
+      <h2 class="section-title">22 Channels.<br/>7 Categories. One Summer.</h2>
       <p class="section-desc">
         Every channel below was reviewed and selected by FreshMinds Academy. No filler —
         only creators who consistently deliver value for students and young professionals.
@@ -850,237 +856,251 @@
       <button class="cat-tab" data-cat="eng">🗺️ English</button>
     </div>
 
-    <!-- ALL CHANNELS VIEW -->
-    <div class="category-section visible" id="cat-all">
+    <!-- SYLLABUS CONTENT -->
+    <div id="syllabus-content">
 
-      <!-- AI -->
-      <div class="cat-title-row">
-        <div class="cat-emoji">🤖</div>
-        <div>
-          <h3>AI & Technology</h3>
-          <p>Stay ahead of the AI revolution with channels that make it practical and actionable.</p>
+      <!-- ── AI & TECHNOLOGY ── -->
+      <div class="cat-block" data-cat="ai">
+        <div class="cat-title-row">
+          <div class="cat-emoji">🤖</div>
+          <div>
+            <h3>AI & Technology</h3>
+            <p>Stay ahead of the AI revolution with channels that make it practical and actionable.</p>
+          </div>
         </div>
-      </div>
-      <div class="channels-grid" style="margin-bottom:48px;">
-        <div class="channel-card">
-          <div class="card-top"><div class="card-emoji">🎭</div><span class="category-pill pill-ai">Faceless YT</span></div>
-          <div class="channel-name">Danny Why</div>
-          <div class="channel-why">The go-to guide for building a faceless YouTube channel using AI tools. Perfect for students who want to start a content side hustle without showing their face.</div>
-          <a href="https://youtube.com/@danny_why" target="_blank" rel="noopener" class="channel-link">Watch on YouTube <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
-        </div>
-        <div class="channel-card">
-          <div class="card-top"><div class="card-emoji">🤖</div><span class="category-pill pill-ai">AI Business</span></div>
-          <div class="channel-name">Liam Ottley</div>
-          <div class="channel-why">Practical AI automation workflows and online business ideas. Learn how to build AI-powered services and systems you can actually monetize as a student.</div>
-          <a href="https://youtube.com/@liamottley" target="_blank" rel="noopener" class="channel-link">Watch on YouTube <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
-        </div>
-        <div class="channel-card">
-          <div class="card-top"><div class="card-emoji">👩‍💻</div><span class="category-pill pill-ai">AI & Coding</span></div>
-          <div class="channel-name">Tina Huang</div>
-          <div class="channel-why">Ex-Meta data scientist who condenses long courses into essential points. Covers AI, data science, and career strategy — all with a "minimal effort, maximum result" mindset.</div>
-          <a href="https://youtube.com/@tinahuang1" target="_blank" rel="noopener" class="channel-link">Watch on YouTube <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
-        </div>
-        <div class="channel-card">
-          <div class="card-top"><div class="card-emoji">⚡</div><span class="category-pill pill-ai">SaaS & AI</span></div>
-          <div class="channel-name">Dan Martell</div>
-          <div class="channel-why">AI productivity tools, SaaS mindset, and founder-level business strategies. Great for students who think entrepreneurially and want to use AI to work smarter.</div>
-          <a href="https://youtube.com/@danmartell" target="_blank" rel="noopener" class="channel-link">Watch on YouTube <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
-        </div>
-        <div class="channel-card">
-          <div class="card-top"><div class="card-emoji">🔥</div><span class="category-pill pill-ai">Coding Fast</span></div>
-          <div class="channel-name">Fireship</div>
-          <div class="channel-why">Complex programming topics explained in 100 seconds. If you're in computer science or want to stay updated on coding trends and AI tools — this is non-negotiable.</div>
-          <a href="https://youtube.com/@Fireship" target="_blank" rel="noopener" class="channel-link">Watch on YouTube <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
-        </div>
-        <div class="channel-card">
-          <div class="card-top"><div class="card-emoji">🔬</div><span class="category-pill pill-ai">AI Reviews</span></div>
-          <div class="channel-name">Matthew Berman</div>
-          <div class="channel-why">In-depth, up-to-date reviews of every major AI tool and model. If you want to know which AI tools are actually worth using — Matthew tests them so you don't have to.</div>
-          <a href="https://youtube.com/@MatthewBerman" target="_blank" rel="noopener" class="channel-link">Watch on YouTube <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
-        </div>
-      </div>
-
-      <!-- BUSINESS -->
-      <div class="cat-title-row">
-        <div class="cat-emoji">💼</div>
-        <div>
-          <h3>Business & Marketing</h3>
-          <p>Learn how real businesses are built, sold, and scaled — from the people who've done it.</p>
-        </div>
-      </div>
-      <div class="channels-grid" style="margin-bottom:48px;">
-        <div class="channel-card">
-          <div class="card-top"><div class="card-emoji">📈</div><span class="category-pill pill-biz">Business</span></div>
-          <div class="channel-name">Alex Hormozi</div>
-          <div class="channel-why">Masterclass-level thinking on building offers, closing sales, and scaling businesses. One of the most valuable free business educations available on the internet today.</div>
-          <a href="https://youtube.com/@alexhormozi" target="_blank" rel="noopener" class="channel-link">Watch on YouTube <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
-        </div>
-        <div class="channel-card">
-          <div class="card-top"><div class="card-emoji">📱</div><span class="category-pill pill-biz">Marketing</span></div>
-          <div class="channel-name">Jordan Platten</div>
-          <div class="channel-why">The best channel for learning social media marketing and SMMA from scratch. Clear, step-by-step guidance for students who want to build a digital marketing side business.</div>
-          <a href="https://youtube.com/@jordanplatten" target="_blank" rel="noopener" class="channel-link">Watch on YouTube <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
-        </div>
-        <div class="channel-card">
-          <div class="card-top"><div class="card-emoji">🎨</div><span class="category-pill pill-biz">Creative Biz</span></div>
-          <div class="channel-name">The Futur (Chris Do)</div>
-          <div class="channel-why">Chris Do teaches creatives how to price their work, negotiate with clients, and think like business professionals. Essential for design, writing, or any skill you want to monetize.</div>
-          <a href="https://youtube.com/@thefutur" target="_blank" rel="noopener" class="channel-link">Watch on YouTube <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
-        </div>
-        <div class="channel-card">
-          <div class="card-top"><div class="card-emoji">🔑</div><span class="category-pill pill-biz">Entrepreneur</span></div>
-          <div class="channel-name">Codie Sanchez</div>
-          <div class="channel-why">Contrarian business thinking that teaches you to spot opportunities others ignore. Codie's approach to buying businesses and creating income streams will change how you see money.</div>
-          <a href="https://youtube.com/@CodieSanchez" target="_blank" rel="noopener" class="channel-link">Watch on YouTube <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+        <div class="channels-grid">
+          <div class="channel-card">
+            <div class="card-top"><div class="card-emoji">🎭</div><span class="category-pill pill-ai">Faceless YT</span></div>
+            <div class="channel-name">Danny Why</div>
+            <div class="channel-why">The go-to guide for building a faceless YouTube channel using AI tools. Perfect for students who want to start a content side hustle without showing their face.</div>
+            <a href="https://youtube.com/@danny_why" target="_blank" rel="noopener" class="channel-link">Watch on YouTube <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+          </div>
+          <div class="channel-card">
+            <div class="card-top"><div class="card-emoji">🤖</div><span class="category-pill pill-ai">AI Business</span></div>
+            <div class="channel-name">Liam Ottley</div>
+            <div class="channel-why">Practical AI automation workflows and online business ideas. Learn how to build AI-powered services and systems you can actually monetize as a student.</div>
+            <a href="https://youtube.com/@liamottley" target="_blank" rel="noopener" class="channel-link">Watch on YouTube <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+          </div>
+          <div class="channel-card">
+            <div class="card-top"><div class="card-emoji">👩‍💻</div><span class="category-pill pill-ai">AI & Coding</span></div>
+            <div class="channel-name">Tina Huang</div>
+            <div class="channel-why">Ex-Meta data scientist who condenses long courses into essential points. Covers AI, data science, and career strategy — all with a "minimal effort, maximum result" mindset.</div>
+            <a href="https://youtube.com/@tinahuang1" target="_blank" rel="noopener" class="channel-link">Watch on YouTube <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+          </div>
+          <div class="channel-card">
+            <div class="card-top"><div class="card-emoji">⚡</div><span class="category-pill pill-ai">SaaS & AI</span></div>
+            <div class="channel-name">Dan Martell</div>
+            <div class="channel-why">AI productivity tools, SaaS mindset, and founder-level business strategies. Great for students who think entrepreneurially and want to use AI to work smarter.</div>
+            <a href="https://youtube.com/@danmartell" target="_blank" rel="noopener" class="channel-link">Watch on YouTube <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+          </div>
+          <div class="channel-card">
+            <div class="card-top"><div class="card-emoji">🔥</div><span class="category-pill pill-ai">Coding Fast</span></div>
+            <div class="channel-name">Fireship</div>
+            <div class="channel-why">Complex programming topics explained in 100 seconds. If you're in computer science or want to stay updated on coding trends and AI tools — this is non-negotiable.</div>
+            <a href="https://youtube.com/@Fireship" target="_blank" rel="noopener" class="channel-link">Watch on YouTube <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+          </div>
+          <div class="channel-card">
+            <div class="card-top"><div class="card-emoji">🔬</div><span class="category-pill pill-ai">AI Reviews</span></div>
+            <div class="channel-name">Matthew Berman</div>
+            <div class="channel-why">In-depth, up-to-date reviews of every major AI tool and model. If you want to know which AI tools are actually worth using — Matthew tests them so you don't have to.</div>
+            <a href="https://youtube.com/@MatthewBerman" target="_blank" rel="noopener" class="channel-link">Watch on YouTube <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+          </div>
         </div>
       </div>
 
-      <!-- PRODUCTIVITY -->
-      <div class="cat-title-row">
-        <div class="cat-emoji">🧠</div>
-        <div>
-          <h3>Productivity & Personal Development</h3>
-          <p>The systems, science, and habits that turn average students into exceptional ones.</p>
+      <!-- ── BUSINESS & MARKETING ── -->
+      <div class="cat-block" data-cat="biz">
+        <div class="cat-title-row">
+          <div class="cat-emoji">💼</div>
+          <div>
+            <h3>Business & Marketing</h3>
+            <p>Learn how real businesses are built, sold, and scaled — from the people who've done it.</p>
+          </div>
         </div>
-      </div>
-      <div class="channels-grid" style="margin-bottom:48px;">
-        <div class="channel-card">
-          <div class="card-top"><div class="card-emoji">📚</div><span class="category-pill pill-prod">Productivity</span></div>
-          <div class="channel-name">Ali Abdaal</div>
-          <div class="channel-why">The gold standard for productivity and the creator economy. Ali bridges medicine, evidence-based study techniques, and building a life you actually enjoy — perfect for freshmen.</div>
-          <a href="https://youtube.com/@aliabdaal" target="_blank" rel="noopener" class="channel-link">Watch on YouTube <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
-        </div>
-        <div class="channel-card">
-          <div class="card-top"><div class="card-emoji">🗂️</div><span class="category-pill pill-prod">Study Systems</span></div>
-          <div class="channel-name">Thomas Frank</div>
-          <div class="channel-why">Note-taking, Notion, Obsidian, and deep study strategies tailored for students. If you want to build a second brain and study smarter — Thomas shows you exactly how.</div>
-          <a href="https://youtube.com/@ThomasFrankExplains" target="_blank" rel="noopener" class="channel-link">Watch on YouTube <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
-        </div>
-        <div class="channel-card">
-          <div class="card-top"><div class="card-emoji">🧬</div><span class="category-pill pill-prod">Neuroscience</span></div>
-          <div class="channel-name">Huberman Lab</div>
-          <div class="channel-why">Science-backed strategies for sleep, focus, learning, and optimizing your brain. Understanding the biology behind your habits gives you a permanent edge over peers who don't.</div>
-          <a href="https://youtube.com/@hubermanlab" target="_blank" rel="noopener" class="channel-link">Watch on YouTube <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
-        </div>
-      </div>
-
-      <!-- COMMUNICATION -->
-      <div class="cat-title-row">
-        <div class="cat-emoji">🗣️</div>
-        <div>
-          <h3>Communication & Confidence</h3>
-          <p>The skill most students neglect — and the one that pays dividends for life.</p>
-        </div>
-      </div>
-      <div class="channels-grid" style="margin-bottom:48px;">
-        <div class="channel-card">
-          <div class="card-top"><div class="card-emoji">✨</div><span class="category-pill pill-comm">Charisma</span></div>
-          <div class="channel-name">Charisma on Command</div>
-          <div class="channel-why">Breaks down real speeches, debates, and conversations to show exactly what makes someone persuasive and magnetic. The most practical communication channel on YouTube.</div>
-          <a href="https://youtube.com/@charismaoncommand" target="_blank" rel="noopener" class="channel-link">Watch on YouTube <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
-        </div>
-        <div class="channel-card">
-          <div class="card-top"><div class="card-emoji">🎤</div><span class="category-pill pill-comm">Storytelling</span></div>
-          <div class="channel-name">TED Talks</div>
-          <div class="channel-why">The gold standard for ideas worth spreading. Study how the world's best communicators structure their thoughts, control their delivery, and move audiences — then apply it yourself.</div>
-          <a href="https://youtube.com/@TED" target="_blank" rel="noopener" class="channel-link">Watch on YouTube <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
-        </div>
-        <div class="channel-card">
-          <div class="card-top"><div class="card-emoji">💬</div><span class="category-pill pill-comm">Career Comm</span></div>
-          <div class="channel-name">Jeff Su</div>
-          <div class="channel-why">Practical, beginner-friendly communication and career advice for young professionals. Jeff covers emails, meetings, presentations, and workplace dynamics with clear, actionable tips.</div>
-          <a href="https://youtube.com/@JeffSu" target="_blank" rel="noopener" class="channel-link">Watch on YouTube <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+        <div class="channels-grid">
+          <div class="channel-card">
+            <div class="card-top"><div class="card-emoji">📈</div><span class="category-pill pill-biz">Business</span></div>
+            <div class="channel-name">Alex Hormozi</div>
+            <div class="channel-why">Masterclass-level thinking on building offers, closing sales, and scaling businesses. One of the most valuable free business educations available on the internet today.</div>
+            <a href="https://youtube.com/@alexhormozi" target="_blank" rel="noopener" class="channel-link">Watch on YouTube <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+          </div>
+          <div class="channel-card">
+            <div class="card-top"><div class="card-emoji">📱</div><span class="category-pill pill-biz">Marketing</span></div>
+            <div class="channel-name">Jordan Platten</div>
+            <div class="channel-why">The best channel for learning social media marketing and SMMA from scratch. Clear, step-by-step guidance for students who want to build a digital marketing side business.</div>
+            <a href="https://youtube.com/@jordanplatten" target="_blank" rel="noopener" class="channel-link">Watch on YouTube <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+          </div>
+          <div class="channel-card">
+            <div class="card-top"><div class="card-emoji">🎨</div><span class="category-pill pill-biz">Creative Biz</span></div>
+            <div class="channel-name">The Futur (Chris Do)</div>
+            <div class="channel-why">Chris Do teaches creatives how to price their work, negotiate with clients, and think like business professionals. Essential for design, writing, or any skill you want to monetize.</div>
+            <a href="https://youtube.com/@thefutur" target="_blank" rel="noopener" class="channel-link">Watch on YouTube <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+          </div>
+          <div class="channel-card">
+            <div class="card-top"><div class="card-emoji">🔑</div><span class="category-pill pill-biz">Entrepreneur</span></div>
+            <div class="channel-name">Codie Sanchez</div>
+            <div class="channel-why">Contrarian business thinking that teaches you to spot opportunities others ignore. Codie's approach to buying businesses and creating income streams will change how you see money.</div>
+            <a href="https://youtube.com/@CodieSanchez" target="_blank" rel="noopener" class="channel-link">Watch on YouTube <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+          </div>
         </div>
       </div>
 
-      <!-- TECH AWARENESS -->
-      <div class="cat-title-row">
-        <div class="cat-emoji">🌍</div>
-        <div>
-          <h3>Tech Awareness & Inspiration</h3>
-          <p>Stay curious. Understand the world being built around you — and your place in it.</p>
+      <!-- ── PRODUCTIVITY ── -->
+      <div class="cat-block" data-cat="prod">
+        <div class="cat-title-row">
+          <div class="cat-emoji">🧠</div>
+          <div>
+            <h3>Productivity & Personal Development</h3>
+            <p>The systems, science, and habits that turn average students into exceptional ones.</p>
+          </div>
         </div>
-      </div>
-      <div class="channels-grid" style="margin-bottom:48px;">
-        <div class="channel-card">
-          <div class="card-top"><div class="card-emoji">🎙️</div><span class="category-pill pill-tech">AI Podcast</span></div>
-          <div class="channel-name">Silicon Valley Girl</div>
-          <div class="channel-why">Weekly AI and tech podcast by Marina Mogilko, featuring interviews with CEOs, founders, and the global leaders building the future — including Reid Hoffman, Mustafa Suleyman, and more.</div>
-          <a href="https://youtube.com/@siliconvalleygirl" target="_blank" rel="noopener" class="channel-link">Watch on YouTube <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
-        </div>
-        <div class="channel-card">
-          <div class="card-top"><div class="card-emoji">🚀</div><span class="category-pill pill-tech">Tech Explainer</span></div>
-          <div class="channel-name">Cleo Abram</div>
-          <div class="channel-why">A video journalist making optimistic, beautifully produced explainers about the future of technology — robots, clean energy, quantum computers. Inspiring and eye-opening for any student.</div>
-          <a href="https://youtube.com/@cleoabram" target="_blank" rel="noopener" class="channel-link">Watch on YouTube <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
-        </div>
-        <div class="channel-card">
-          <div class="card-top"><div class="card-emoji">⚛️</div><span class="category-pill pill-tech">Science</span></div>
-          <div class="channel-name">Veritasium</div>
-          <div class="channel-why">Makes complex physics and science genuinely fascinating through high-production storytelling. Great for engineering and science students who want to love their field, not just survive it.</div>
-          <a href="https://youtube.com/@veritasium" target="_blank" rel="noopener" class="channel-link">Watch on YouTube <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
-        </div>
-      </div>
-
-      <!-- FINANCE -->
-      <div class="cat-title-row">
-        <div class="cat-emoji">💰</div>
-        <div>
-          <h3>Financial Literacy</h3>
-          <p>Nobody teaches you this in school. Start now and you'll be years ahead of your peers.</p>
-        </div>
-      </div>
-      <div class="channels-grid" style="margin-bottom:16px;">
-        <div class="channel-card">
-          <div class="card-top"><div class="card-emoji">💵</div><span class="category-pill pill-fin">Finance</span></div>
-          <div class="channel-name">Graham Stephan</div>
-          <div class="channel-why">Personal finance, investing, saving, and real estate basics explained for young adults. Starting your money habits in Year 1 of university puts you a decade ahead by graduation.</div>
-          <a href="https://youtube.com/@GrahamStephan" target="_blank" rel="noopener" class="channel-link">Watch on YouTube <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+        <div class="channels-grid">
+          <div class="channel-card">
+            <div class="card-top"><div class="card-emoji">📚</div><span class="category-pill pill-prod">Productivity</span></div>
+            <div class="channel-name">Ali Abdaal</div>
+            <div class="channel-why">The gold standard for productivity and the creator economy. Ali bridges medicine, evidence-based study techniques, and building a life you actually enjoy — perfect for freshmen.</div>
+            <a href="https://youtube.com/@aliabdaal" target="_blank" rel="noopener" class="channel-link">Watch on YouTube <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+          </div>
+          <div class="channel-card">
+            <div class="card-top"><div class="card-emoji">🗂️</div><span class="category-pill pill-prod">Study Systems</span></div>
+            <div class="channel-name">Thomas Frank</div>
+            <div class="channel-why">Note-taking, Notion, Obsidian, and deep study strategies tailored for students. If you want to build a second brain and study smarter — Thomas shows you exactly how.</div>
+            <a href="https://youtube.com/@ThomasFrankExplains" target="_blank" rel="noopener" class="channel-link">Watch on YouTube <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+          </div>
+          <div class="channel-card">
+            <div class="card-top"><div class="card-emoji">🧬</div><span class="category-pill pill-prod">Neuroscience</span></div>
+            <div class="channel-name">Huberman Lab</div>
+            <div class="channel-why">Science-backed strategies for sleep, focus, learning, and optimizing your brain. Understanding the biology behind your habits gives you a permanent edge over peers who don't.</div>
+            <a href="https://youtube.com/@hubermanlab" target="_blank" rel="noopener" class="channel-link">Watch on YouTube <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+          </div>
         </div>
       </div>
 
-      <!-- ENGLISH LEARNING -->
-      <div class="cat-title-row">
-        <div class="cat-emoji">🗺️</div>
-        <div>
-          <h3>English Language Learning</h3>
-          <p>Build the listening and speaking confidence that opens every door — academically and professionally.</p>
+      <!-- ── COMMUNICATION ── -->
+      <div class="cat-block" data-cat="comm">
+        <div class="cat-title-row">
+          <div class="cat-emoji">🗣️</div>
+          <div>
+            <h3>Communication & Confidence</h3>
+            <p>The skill most students neglect — and the one that pays dividends for life.</p>
+          </div>
         </div>
-      </div>
-      <div class="channels-grid" style="margin-bottom:16px;">
-        <div class="channel-card">
-          <div class="card-top"><div class="card-emoji">🎧</div><span class="category-pill pill-eng">Listening</span></div>
-          <div class="channel-name">BBC Learning English</div>
-          <div class="channel-why">The most trusted English learning channel on YouTube. Short daily videos covering real pronunciation, grammar in use, and natural conversation — made by native BBC journalists. Perfect starting point for any level.</div>
-          <a href="https://youtube.com/@BBCLearningEnglish" target="_blank" rel="noopener" class="channel-link">Watch on YouTube <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
-        </div>
-        <div class="channel-card">
-          <div class="card-top"><div class="card-emoji">🗣️</div><span class="category-pill pill-eng">Speaking</span></div>
-          <div class="channel-name">Speak English With Vanessa</div>
-          <div class="channel-why">Vanessa focuses entirely on real, natural spoken English — how native speakers actually talk, not textbook English. Brilliant for building confidence in conversation, presentations, and interviews.</div>
-          <a href="https://youtube.com/@SpeakEnglishWithVanessa" target="_blank" rel="noopener" class="channel-link">Watch on YouTube <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
-        </div>
-        <div class="channel-card">
-          <div class="card-top"><div class="card-emoji">🎬</div><span class="category-pill pill-eng">Immersion</span></div>
-          <div class="channel-name">English with Lucy</div>
-          <div class="channel-why">One of YouTube's most popular English teachers with over 12M subscribers. Lucy covers British accent, vocabulary, and real-world phrases in a clear, engaging style — great for academic and professional English.</div>
-          <a href="https://youtube.com/@EnglishwithLucy" target="_blank" rel="noopener" class="channel-link">Watch on YouTube <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
-        </div>
-        <div class="channel-card">
-          <div class="card-top"><div class="card-emoji">📖</div><span class="category-pill pill-eng">Vocabulary</span></div>
-          <div class="channel-name">ETJ English</div>
-          <div class="channel-why">A friendly, structured channel focused on practical English vocabulary and everyday conversation. Lessons are slow, clear, and designed for non-native speakers — ideal for students building their active vocabulary and listening comprehension from scratch.</div>
-          <a href="https://youtube.com/@ETJEnglish" target="_blank" rel="noopener" class="channel-link">Watch on YouTube <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
-        </div>
-        <div class="channel-card">
-          <div class="card-top"><div class="card-emoji">🏆</div><span class="category-pill pill-eng">Advanced</span></div>
-          <div class="channel-name">Rachel's English</div>
-          <div class="channel-why">The best channel specifically for American English pronunciation and accent training. Rachel breaks down mouth position, intonation, and connected speech in a way no classroom teacher ever does. Great for students preparing for interviews or presentations.</div>
-          <a href="https://youtube.com/@rachelsenglish" target="_blank" rel="noopener" class="channel-link">Watch on YouTube <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+        <div class="channels-grid">
+          <div class="channel-card">
+            <div class="card-top"><div class="card-emoji">✨</div><span class="category-pill pill-comm">Charisma</span></div>
+            <div class="channel-name">Charisma on Command</div>
+            <div class="channel-why">Breaks down real speeches, debates, and conversations to show exactly what makes someone persuasive and magnetic. The most practical communication channel on YouTube.</div>
+            <a href="https://youtube.com/@charismaoncommand" target="_blank" rel="noopener" class="channel-link">Watch on YouTube <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+          </div>
+          <div class="channel-card">
+            <div class="card-top"><div class="card-emoji">🎤</div><span class="category-pill pill-comm">Storytelling</span></div>
+            <div class="channel-name">TED Talks</div>
+            <div class="channel-why">The gold standard for ideas worth spreading. Study how the world's best communicators structure their thoughts, control their delivery, and move audiences — then apply it yourself.</div>
+            <a href="https://youtube.com/@TED" target="_blank" rel="noopener" class="channel-link">Watch on YouTube <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+          </div>
+          <div class="channel-card">
+            <div class="card-top"><div class="card-emoji">💬</div><span class="category-pill pill-comm">Career Comm</span></div>
+            <div class="channel-name">Jeff Su</div>
+            <div class="channel-why">Practical, beginner-friendly communication and career advice for young professionals. Jeff covers emails, meetings, presentations, and workplace dynamics with clear, actionable tips.</div>
+            <a href="https://youtube.com/@JeffSu" target="_blank" rel="noopener" class="channel-link">Watch on YouTube <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+          </div>
         </div>
       </div>
 
-    </div><!-- /cat-all -->
+      <!-- ── TECH AWARENESS ── -->
+      <div class="cat-block" data-cat="tech">
+        <div class="cat-title-row">
+          <div class="cat-emoji">🌍</div>
+          <div>
+            <h3>Tech Awareness & Inspiration</h3>
+            <p>Stay curious. Understand the world being built around you — and your place in it.</p>
+          </div>
+        </div>
+        <div class="channels-grid">
+          <div class="channel-card">
+            <div class="card-top"><div class="card-emoji">🎙️</div><span class="category-pill pill-tech">AI Podcast</span></div>
+            <div class="channel-name">Silicon Valley Girl</div>
+            <div class="channel-why">Weekly AI and tech podcast by Marina Mogilko, featuring interviews with CEOs, founders, and the global leaders building the future — including Reid Hoffman, Mustafa Suleyman, and more.</div>
+            <a href="https://youtube.com/@siliconvalleygirl" target="_blank" rel="noopener" class="channel-link">Watch on YouTube <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+          </div>
+          <div class="channel-card">
+            <div class="card-top"><div class="card-emoji">🚀</div><span class="category-pill pill-tech">Tech Explainer</span></div>
+            <div class="channel-name">Cleo Abram</div>
+            <div class="channel-why">A video journalist making optimistic, beautifully produced explainers about the future of technology — robots, clean energy, quantum computers. Inspiring and eye-opening for any student.</div>
+            <a href="https://youtube.com/@cleoabram" target="_blank" rel="noopener" class="channel-link">Watch on YouTube <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+          </div>
+          <div class="channel-card">
+            <div class="card-top"><div class="card-emoji">⚛️</div><span class="category-pill pill-tech">Science</span></div>
+            <div class="channel-name">Veritasium</div>
+            <div class="channel-why">Makes complex physics and science genuinely fascinating through high-production storytelling. Great for engineering and science students who want to love their field, not just survive it.</div>
+            <a href="https://youtube.com/@veritasium" target="_blank" rel="noopener" class="channel-link">Watch on YouTube <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── FINANCE ── -->
+      <div class="cat-block" data-cat="fin">
+        <div class="cat-title-row">
+          <div class="cat-emoji">💰</div>
+          <div>
+            <h3>Financial Literacy</h3>
+            <p>Nobody teaches you this in school. Start now and you'll be years ahead of your peers.</p>
+          </div>
+        </div>
+        <div class="channels-grid">
+          <div class="channel-card">
+            <div class="card-top"><div class="card-emoji">💵</div><span class="category-pill pill-fin">Finance</span></div>
+            <div class="channel-name">Graham Stephan</div>
+            <div class="channel-why">Personal finance, investing, saving, and real estate basics explained for young adults. Starting your money habits in Year 1 of university puts you a decade ahead by graduation.</div>
+            <a href="https://youtube.com/@GrahamStephan" target="_blank" rel="noopener" class="channel-link">Watch on YouTube <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── ENGLISH LEARNING ── -->
+      <div class="cat-block" data-cat="eng">
+        <div class="cat-title-row">
+          <div class="cat-emoji">🗺️</div>
+          <div>
+            <h3>English Language Learning</h3>
+            <p>Build the listening and speaking confidence that opens every door — academically and professionally.</p>
+          </div>
+        </div>
+        <div class="channels-grid">
+          <div class="channel-card">
+            <div class="card-top"><div class="card-emoji">🎧</div><span class="category-pill pill-eng">Listening</span></div>
+            <div class="channel-name">BBC Learning English</div>
+            <div class="channel-why">The most trusted English learning channel on YouTube. Short daily videos covering real pronunciation, grammar in use, and natural conversation — made by native BBC journalists. Perfect starting point for any level.</div>
+            <a href="https://youtube.com/@BBCLearningEnglish" target="_blank" rel="noopener" class="channel-link">Watch on YouTube <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+          </div>
+          <div class="channel-card">
+            <div class="card-top"><div class="card-emoji">🗣️</div><span class="category-pill pill-eng">Speaking</span></div>
+            <div class="channel-name">Speak English With Vanessa</div>
+            <div class="channel-why">Vanessa focuses entirely on real, natural spoken English — how native speakers actually talk, not textbook English. Brilliant for building confidence in conversation, presentations, and interviews.</div>
+            <a href="https://youtube.com/@SpeakEnglishWithVanessa" target="_blank" rel="noopener" class="channel-link">Watch on YouTube <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+          </div>
+          <div class="channel-card">
+            <div class="card-top"><div class="card-emoji">🎬</div><span class="category-pill pill-eng">Immersion</span></div>
+            <div class="channel-name">English with Lucy</div>
+            <div class="channel-why">One of YouTube's most popular English teachers with over 12M subscribers. Lucy covers British accent, vocabulary, and real-world phrases in a clear, engaging style — great for academic and professional English.</div>
+            <a href="https://youtube.com/@EnglishwithLucy" target="_blank" rel="noopener" class="channel-link">Watch on YouTube <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+          </div>
+          <div class="channel-card">
+            <div class="card-top"><div class="card-emoji">📖</div><span class="category-pill pill-eng">Vocabulary</span></div>
+            <div class="channel-name">ETJ English</div>
+            <div class="channel-why">A friendly, structured channel focused on practical English vocabulary and everyday conversation. Lessons are slow, clear, and designed for non-native speakers — ideal for building active vocabulary and listening comprehension from scratch.</div>
+            <a href="https://youtube.com/@ETJEnglish" target="_blank" rel="noopener" class="channel-link">Watch on YouTube <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+          </div>
+          <div class="channel-card">
+            <div class="card-top"><div class="card-emoji">🏆</div><span class="category-pill pill-eng">Pronunciation</span></div>
+            <div class="channel-name">Rachel's English</div>
+            <div class="channel-why">The best channel specifically for American English pronunciation and accent training. Rachel breaks down mouth position, intonation, and connected speech in a way no classroom teacher does. Great for students preparing for interviews or presentations.</div>
+            <a href="https://youtube.com/@rachelsenglish" target="_blank" rel="noopener" class="channel-link">Watch on YouTube <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /syllabus-content -->
 
   </div>
 </section>
@@ -1199,28 +1219,43 @@
 <button id="scrollTop" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Scroll to top">↑</button>
 
 <script>
-  // Category tab filtering
+  // ── TAB FILTERING ──
   const tabs = document.querySelectorAll('.cat-tab');
+  const blocks = document.querySelectorAll('.cat-block');
+
+  function showCategory(cat) {
+    blocks.forEach(block => {
+      if (cat === 'all' || block.dataset.cat === cat) {
+        block.style.display = 'block';
+        block.style.animation = 'fadeIn 0.35s ease';
+      } else {
+        block.style.display = 'none';
+      }
+    });
+    // Scroll syllabus into view smoothly when a tab is clicked (except on initial load)
+    if (cat !== 'all') {
+      document.getElementById('syllabus-content').scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  }
+
   tabs.forEach(tab => {
     tab.addEventListener('click', () => {
       tabs.forEach(t => t.classList.remove('active'));
       tab.classList.add('active');
-      const cat = tab.dataset.cat;
-      document.querySelectorAll('.category-section').forEach(s => s.classList.remove('visible'));
-      const target = document.getElementById('cat-' + cat);
-      if (target) target.classList.add('visible');
-      else document.getElementById('cat-all').classList.add('visible');
+      showCategory(tab.dataset.cat);
     });
   });
 
-  // Scroll to top button
+  // Show all on load
+  showCategory('all');
+
+  // ── SCROLL TO TOP ──
   const scrollBtn = document.getElementById('scrollTop');
   window.addEventListener('scroll', () => {
-    if (window.scrollY > 400) scrollBtn.classList.add('visible');
-    else scrollBtn.classList.remove('visible');
+    scrollBtn.classList.toggle('visible', window.scrollY > 400);
   });
 
-  // Animate stat numbers on scroll
+  // ── SCROLL ANIMATIONS ──
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
@@ -1228,7 +1263,7 @@
         entry.target.style.transform = 'translateY(0)';
       }
     });
-  }, { threshold: 0.1 });
+  }, { threshold: 0.08 });
 
   document.querySelectorAll('.channel-card, .stat-card, .about-card, .howto-card').forEach(el => {
     el.style.opacity = '0';
